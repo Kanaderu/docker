@@ -8,7 +8,6 @@ pymap3d
 jupyter-dash
 jupyterlab
 lxml
-#gdal
 networkx[default,extra]
 opencv-contrib-python
 numpy
