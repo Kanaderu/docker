@@ -2,6 +2,7 @@ contextily
 fiftyone
 fiftyone[desktop]
 dash
+dash-bootstrap-components
 folium
 geopandas
 pymap3d
