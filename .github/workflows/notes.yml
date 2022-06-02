@@ -1,4 +1,4 @@
-name: notes
+name: amd64/notes
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
@@ -23,11 +23,11 @@ env:
 
 
 jobs:
-  notes:
+  amd64_notes:
 
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: ${{ github.repository }}/notes
+      IMAGE_NAME: ${{ github.repository }}/amd64/notes
     permissions:
       contents: read
       packages: write
@@ -76,7 +76,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
         with:
-          context: ./notes/amd64
+          context: ./amd64/notes
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
