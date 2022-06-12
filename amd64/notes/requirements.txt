@@ -36,6 +36,12 @@ sphinx-book-theme
 myst-nb
 jupytext
 
+# sphinx extensions
+sphinxcontrib-bibtex
+sphinx-togglebutton
+sphinx-tabs
+sphinxcontrib.youtube
+
 # downgrade some versions in the meantime until it gets updated
 docutils<0.18,>=0.15
 sphinx<5,>=3.5
