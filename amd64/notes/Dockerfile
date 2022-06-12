@@ -46,4 +46,8 @@ RUN python -m venv $PYENV && \
 COPY ./entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 
+# setup app location
+WORKDIR /app
+
+# command
 CMD ["jupyter", "lab", "--ip", "0.0.0.0", "--allow-root"]
