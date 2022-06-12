@@ -31,7 +31,12 @@ tensorflow
 tensorflow-datasets
 
 # docs
-sphinx
+#sphinx
 sphinx-book-theme
 myst-nb
 jupytext
+
+# downgrade some versions in the meantime until it gets updated
+docutils<0.18,>=0.15
+sphinx<5,>=3.5
+nbclient<0.6,>=0.2
