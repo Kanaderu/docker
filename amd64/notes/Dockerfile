@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # setup system packages
 USER root
 RUN apt-get update -yq && \
-    apt-get install -yq curl git pkg-config wget vim unzip apt-utils x11-apps cmake build-essential \
+    apt-get install -yq curl git pkg-config rsync wget vim unzip apt-utils x11-apps cmake build-essential \
                         automake libtool autoconf libcairo2-dev libpango1.0-dev libglib2.0-dev \
                         libglew-dev libglfw3-dev libgtest-dev \
                         python3 python3-pip python3-dev python3-venv libpython3-dev \
