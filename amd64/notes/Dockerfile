@@ -39,6 +39,7 @@ WORKDIR /home/$USER
 COPY ./requirements.txt /
 RUN python -m venv $PYENV && \
     source /home/$USER/$PYENV/bin/activate && \
+    pip install wheel && \
     pip install -r /requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113 && \
     jupyter lab build
 
