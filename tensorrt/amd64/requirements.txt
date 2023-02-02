@@ -1,0 +1,51 @@
+fiftyone
+ipywidgets>=7.6,<8
+jupyter-tensorboard
+jupyterlab>=3
+matplotlib
+onnx2keras
+onnx_tf
+onnx
+onnxruntime
+onnxruntime-gpu
+#opencv-contrib-python-headless
+opencv-python
+pandas
+plotly
+pyprof
+scikit-learn
+scipy
+seaborn
+#skl2onnx
+statsmodels
+tensorboard
+tensorflow
+tensorflow-model-optimization
+tf2onnx
+tflite-runtime
+torch
+torchaudio
+torchsummary
+torchvision
+tqdm
+umap-learn>=0.5
+
+# Yolov5 Benchmarking
+nvitop
+py3nvml
+x2paddle
+paddlepaddle
+paddlepaddle-gpu
+
+# Yolov5 Export
+gitpython
+coremltools>=6.0  # CoreML export
+onnx>=1.9.0  # ONNX export
+onnx-simplifier>=0.4.1  # ONNX simplifier
+nvidia-pyindex  # TensorRT export
+nvidia-tensorrt  # TensorRT export
+scikit-learn<=1.1.2  # CoreML quantization
+#tensorflow>=2.4.1  # TF exports (-cpu, -aarch64, -macos)
+tensorflowjs>=3.9.0  # TF.js export
+openvino-dev  # OpenVINO export
+pycocotools
