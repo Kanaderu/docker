@@ -1,0 +1,18 @@
+services:
+  nsight:
+    build: .
+    privileged: true
+    environment:
+      - DISPLAY
+      #- XDG_RUNTIME_DIR
+    volumes:
+      #- $XAUTHORITY:/root/.Xauthority
+      - $HOME/.Xauthority:/root/.Xauthority
+    network_mode: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
